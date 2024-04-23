@@ -7,15 +7,15 @@
 // console.log(numeroDeCaracteres("MMMMM", "m")) // 0
 // console.log(numeroDeCaracteres("eeee", e)) // 4
 
-function numeroDeCaracteres(palabra,letra){
+function numeroDeCaracteres(palabra,letras){
     let counter=0;
     for (let value of palabra){
-        if (value===letra){
-            counter++
+        if (value===letras){
+            counter++;
         }
     }
     return counter
 }
-word=prompt('ingrese la palabra')
-letra=prompt('ingrese la letra')
-console.log(numeroDeAes(word,letra))
+let word=prompt('ingrese la palabra');
+let letra=prompt('ingrese la letra');
+console.log(numeroDeCaracteres(word,letra))
